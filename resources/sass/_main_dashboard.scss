@@ -1,0 +1,158 @@
+/*!
+* SB Admin Laravel
+*
+* 2023 shuamilabs   - https://youtube.com/shuamilabs
+***********************************************************************************************
+* Custom dashboard
+**********************************************************************************************/
+
+.logo-brand {
+    width: 3.3rem;
+    height: auto;
+}
+.navbar-expand {
+	.navbar-nav {
+		.dropdown-menu {
+			border-radius: 0;
+		}
+	}
+}
+.sb-sidenav-light-1 {
+	background-color: #f1f4f7;
+	color: #212529;
+	.sb-sidenav-menu {
+		.sb-sidenav-menu-heading {
+			color: #adb5bd;
+		}
+		.nav-link {
+			color: #212529;
+			.sb-nav-link-icon {
+				color: #adb5bd;
+			}
+			.sb-sidenav-collapse-arrow {
+				color: #adb5bd;
+			}
+			&:hover {
+				color: #0d6efd;
+			}
+		}
+		.nav-link.active {
+			color: #0d6efd;
+			.sb-nav-link-icon {
+				color: #0d6efd;
+			}
+		}
+	}
+	.sb-sidenav-footer {
+		background-color: #e9ecef;
+	}
+}
+#layoutSidenav {
+	#layoutSidenav_nav {
+		flex-basis: -280px;
+		transform: translateX(-280px);
+	}
+	#layoutSidenav_content {
+		margin-left: -280px;
+	}
+}
+@media (min-width: 992px) {
+	#layoutSidenav {
+		#layoutSidenav_nav {
+			transform: translateX(0);
+		}
+		#layoutSidenav_content {
+			margin-left: 0;
+			transition: margin 0.15s ease-in-out;
+		}
+	}
+	.sb-sidenav-toggled {
+		#layoutSidenav {
+			#layoutSidenav_nav {
+				transform: translateX(-280px);
+			}
+			#layoutSidenav_content {
+				margin-left: -280px;
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.sb-nav-fixed {
+	#layoutSidenav {
+		#layoutSidenav_nav {
+			width: 280px;
+		}
+	}
+}
+.sb-nav-fixed {
+	#layoutSidenav {
+		#layoutSidenav_content {
+			padding-left: 280px;
+		}
+	}
+}
+.sb-topnav {
+	.navbar-brand {
+		width: 280px;
+	}
+}
+.sb-sidenav {
+	.sb-sidenav-menu {
+		.nav {
+			.nav-link {
+				padding-top: 0.25rem !important;
+				padding-bottom: 0.25rem !important;
+			}
+		}
+	}
+}
+.sb-sidenav {
+	.sb-sidenav-menu {
+		.nav {
+			.sb-sidenav-menu-nested {
+				.nav-link {
+					padding-top: 0.05rem !important;
+					padding-bottom: 0.05rem !important;
+					padding-left: 1.5rem !important;
+				}
+			}
+		}
+	}
+}
+.sb-nav-fixed.sb-sidenav-toggled {
+	.sb-topnav {
+		#sidebarToggle {
+			.bi-list-nested::before {
+				content: "\f659";
+			}
+		}
+	}
+}
+.sb-nav-fixed {
+	.sb-topnav {
+		#sidebarToggle {		
+			display: inline-block;
+			transition: transform 0.15s ease;
+		}
+	}
+}
+.breadcrumb-link {
+	a {
+		color: #8f8f8f;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			color: #040404;
+		}
+		&:focus {
+			color: #8f8f8f;
+		}
+		&:active {
+			color: #8f8f8f;
+		}
+	}
+}
