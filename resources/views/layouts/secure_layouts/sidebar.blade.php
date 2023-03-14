@@ -14,8 +14,8 @@
             </a>
             <div class="collapse {{ request()->routeIs('secure.layouts-nav.*') ? 'show' : '' }}" id="layoutsNav" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="#"><i class="bi bi-arrow-right-short"></i>Static Page</a>
-                    <a class="nav-link {{ request()->routeIs('secure.layouts-nav.blank-page') ? 'active' : '' }}" href=" {{ route('secure.layouts-nav.blank-page') }}"><i class="bi bi-arrow-right-short"></i>Blank Page</a>
+                    <a class="nav-link {{ request()->routeIs('secure.layouts-nav.static-page') ? 'active' : '' }}" href="{{ route('secure.layouts-nav.static-page') }}"><i class="bi bi-arrow-right-short"></i>Static Page</a>
+                    <a class="nav-link {{ request()->routeIs('secure.layouts-nav.blank-page') ? 'active' : '' }}" href="{{ route('secure.layouts-nav.blank-page') }}"><i class="bi bi-arrow-right-short"></i>Blank Page</a>
                 </nav>
             </div>
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesNav" aria-expanded="false" aria-controls="pagesNav">

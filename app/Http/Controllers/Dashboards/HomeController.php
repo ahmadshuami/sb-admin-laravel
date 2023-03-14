@@ -51,4 +51,15 @@ class HomeController extends Controller
     {
         return view('secure_pages.blank_page');
     }
+
+    /**
+     * Static page.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function staticPage(Request $request)
+    {
+        return view('secure_pages.static_page');
+    }
 }
