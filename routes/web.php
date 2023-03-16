@@ -38,6 +38,8 @@ Route::match(['get', 'post'], '/logout', [App\Http\Controllers\Auth\LoginControl
 */
 Route::namespace('Dashboards')->prefix('secure')->name('secure.')->group(function() {
     Route::get('/home', [App\Http\Controllers\Dashboards\HomeController::class, 'index'])->name('home');
-    Route::get('/layouts-nav/static-page', [App\Http\Controllers\Dashboards\HomeController::class, 'staticPage'])->name('layouts-nav.static-page');
-    Route::get('/layouts-nav/blank-page', [App\Http\Controllers\Dashboards\HomeController::class, 'blankPage'])->name('layouts-nav.blank-page');
+    Route::get('/users/user-list', [App\Http\Controllers\Dashboards\HomeController::class, 'userList'])->name('users.user-list');
+    Route::get('/users/get-users', [App\Http\Controllers\Dashboards\HomeController::class, 'getUserList'])->name('users.get-users');
+    Route::get('/users/get-user-data', [App\Http\Controllers\Dashboards\HomeController::class, 'getUserData'])->name('users.get-user-data');
+    Route::get('/users/blank-page', [App\Http\Controllers\Dashboards\HomeController::class, 'blankPage'])->name('users.blank-page');
 });

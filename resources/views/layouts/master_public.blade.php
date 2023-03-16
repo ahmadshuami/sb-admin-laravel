@@ -33,6 +33,8 @@
         </main>
     </div>
 
+    <script src="{{ asset('assets/vendor/jquery/jquery-3.6.4.min.js') }}" type="text/javascript"></script>
+    
     <script type="text/javascript">
         function aos_init() {
             Aos.init({

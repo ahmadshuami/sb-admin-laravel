@@ -19,7 +19,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="{{ asset('assets/css/vendor/styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/css/styles.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     @vite('resources/js/dashboard.js')
@@ -47,7 +47,8 @@
         </div>
     </div>
 
-    <script src="{{ asset('assets/js/vendor/scripts.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/vendor/jquery/jquery-3.6.4.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('assets/vendor/js/scripts.js') }}" type="text/javascript"></script>
 
     <script type="text/javascript">
         function aos_init() {
