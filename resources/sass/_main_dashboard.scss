@@ -139,6 +139,12 @@
 		}
 	}
 }
+#sidebarToggle.btn {
+	&:focus {
+	  outline: 0;
+	  box-shadow: none !important;
+	}
+}
 .breadcrumb-link {
 	a {
 		color: #8f8f8f;
