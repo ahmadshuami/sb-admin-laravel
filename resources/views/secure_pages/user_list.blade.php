@@ -12,7 +12,7 @@
         </li>
     </ol>
 
-    <div class="card bg-gradient-primary" data-aos="fade-up">
+    <div class="card bg-primary bg-gradient" data-aos="fade-up">
         <div class="card-body outside-card">
             <div class="card">
                 <div class="card-body">
@@ -27,7 +27,7 @@
                         <div class="col-lg-12">
                             <div class="mt-3 table-responsive">
                                 <table class="table table-bordered" id="tbl_users" width="100%" cellspacing="0">
-                                    <thead class="bg-gradient-light">
+                                    <thead class="bg-light bg-gradient">
                                         <tr>
                                             <th>#</th>
                                             <th>Full Name</th>
@@ -185,7 +185,7 @@
                     cell.innerHTML = i+1+'.';
                 });
             }).draw();
-        }
+    }
     </script>
 
 @endpush
